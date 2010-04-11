@@ -30,7 +30,7 @@ Installing the extension
         script/extension install git://github.com/docelic/spree-ckeditor.git
         cd vendor/extensions && git clone git://github.com/docelic/spree-ckeditor.git ckeditor
 
-2. Install any missing deps and migrate database
+2. Install any missing deps and migrate database (none needed ATM)
 
         rake gems:install
         rake db:migrate
@@ -41,6 +41,9 @@ Installing the extension
 
 Showing the editor
 ---------------
+
+To show the editor on a page or within partial, place the following in
+the page source:
 
     <% content_for :head do %>
       <%= javascript_include_tag 'jquery/jquery.js' %>
