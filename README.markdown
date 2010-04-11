@@ -70,9 +70,10 @@ Configuring the editor
 
 To configure the editor, tune file public/javascripts/ckeditor/config.js.
 
-The config file as shipped with the extension defines its own toolbar,
-according to style found in popular word processors to day.
+The config file as shipped is ready for use and customizes the default
+toolbar according to style found in popular word processors today.
 
+The config file can be tuned to your linking.
 Commenting the "config.toolbar_Full" definition will display the complete
 toolbar.
 
