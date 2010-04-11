@@ -78,3 +78,11 @@ Commenting the "config.toolbar_Full" definition will display the complete
 toolbar.
 
 For complete customization documentation, see [CKEditor Docs](http://docs.cksource.com/).
+
+Known issues
+---------------
+
+ * CKEditor currently doesn't show menu icons when used from an outside component; fix pending
+
+ * CKEditor crashes Galeon 2.0.7 (unrelated to the extension)
+
