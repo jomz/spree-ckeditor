@@ -10,7 +10,7 @@ CKEDITOR.editorConfig = function( config )
 	// config.uiColor = '#AADC6E';
 
 	config.colorButton_enableMore = true;
-	config.defaultLanguage = 'hr';
+	config.defaultLanguage = 'en';
 	//config.menu_groups = 'clipboard,form,tablecell,tablecellproperties,tablerow,tablecolumn,table,anchor,link,image,flash,checkbox,radio,textfield,hiddenfield,imagebutton,button,select,textarea';
 
 	config.toolbar_Full =

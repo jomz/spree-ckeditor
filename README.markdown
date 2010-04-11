@@ -7,9 +7,16 @@ Many Spree extensions require or allow use of a rich textarea editor
 and bundle the editor as sort of a "black box" together with their
 component.
 
-This extension is an abstraction of that editor. As long as it is
+That editor then goes out of date, doesn't integrate well into the site,
+or is sub-par compared to better editors available.
+
+This extension is an abstraction of an amazing word processor, CKEditor.
+On top of a rich and usable interface, it supports in-place resizing of the
+edit box and full screen mode.
+
+As long as the component is
 installed, everyone can call .editor() on a field to turn it into a
-rich text editor.
+rich text editor. The editor is shown using jQuery.
 
 Extension maintenance Davor Ocelic, [Spinlock Solutions](http://www.spinlocksolutions.com) .
 
@@ -28,7 +35,7 @@ Installing the extension
 1. extension install OR git clone:
 
         script/extension install git://github.com/docelic/spree-ckeditor.git
-        cd vendor/extensions && git clone git://github.com/docelic/spree-ckeditor.git ckeditor
+        cd vendor/extensions && git clone git://github.com/docelic/spree-ckeditor.git ckeditor && cd ..
 
 2. Install any missing deps and migrate database (none needed ATM)
 
@@ -58,3 +65,15 @@ the page source:
     
     <%= f.text_area :body, {"style" => "width:500px", "class"=> "editor"} %>
 
+Configuring the editor
+---------------
+
+To configure the editor, tune file public/javascripts/ckeditor/config.js.
+
+The config file as shipped with the extension defines its own toolbar,
+according to style found in popular word processors to day.
+
+Commenting the "config.toolbar_Full" definition will display the complete
+toolbar.
+
+For complete customization documentation, see [CKEditor Docs](http://docs.cksource.com/).
