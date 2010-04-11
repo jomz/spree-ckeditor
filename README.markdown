@@ -53,7 +53,9 @@ To show the editor on a page or within partial, place the following in
 the page source:
 
     <% content_for :head do %>
-      <%= javascript_include_tag 'jquery/jquery.js' %>
+
+      <%= javascript_include_tag 'jquery/jquery.js' %>  <--- NOT NEEDED
+
       <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
       <%= javascript_include_tag 'ckeditor/adapters/jquery.js' %>
     
